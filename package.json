@@ -1,0 +1,21 @@
+{
+    "name": "nest-krama-watson",
+    "version": "1.2.2",
+    "description": "Paquete para utilizar los servicios de IBM Watson en Nest.JS",
+    "author": "Robert Mengual",
+    "main": "index.js",
+    "license": "BEERWARE",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "tsc && cp package.json dist && cp README.md dist",
+        "publish": "npm publish dist",
+        "update": "npm run clean && npm run build && npm publish dist"
+    },
+    "dependencies": {
+        "@nestjs/common": "^5.0.0",
+        "@nestjs/core": "^5.0.0",
+        "rxjs": "^6.0.0",
+        "typescript": "^2.6.2",
+        "watson-developer-cloud": "^3.7.1"
+    }
+}
